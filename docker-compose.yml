@@ -5,19 +5,19 @@ services:
    container_name: mysqldb
    image: mysql
    ports:
-     - "3306"
+     - "3306:3306"
  environment:
     - MYSQL_DATABASE: mysqldb
     - MYSQL_ROOT_PASSWORD: root
  
 
  webapp:
-  container_name: springboot
+  container_name: springbootapp
   build:
-   container: ./
+   context: ./
    dockerfile: dockerfile
    ports:
     - 8080:8080
    depends_on:
-     -mysql_db
+     -mysqldb
 
