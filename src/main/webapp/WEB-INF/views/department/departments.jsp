@@ -19,7 +19,7 @@
 						<h4 class="page-title">Departments</h4>
 					</div>
 					<div class="col-sm-7 col-7 text-right m-b-30">
-						<a href="${requestContext.path}/departments/viewAddDeptPage"
+						<a href="${requestContext.path}/departments--2/viewAddDeptPage"
 							class="btn btn-primary btn-rounded"><i class="fa fa-plus"></i>
 							Add Department</a>
 					</div>
